@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Requerimiento de Compra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen m-0">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h1 class="text-center text-3xl font-bold text-gray-800 mb-6">Nuevo Requerimiento de Compra</h1>
+        <form id="purchaseRequestForm" class="space-y-4">
+            <div>
+                <label for="item-name" class="block text-gray-700 text-sm font-bold mb-2">Nombre del Artículo:</label>
+                <input type="text" id="item-name" name="item-name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="quantity" class="block text-gray-700 text-sm font-bold mb-2">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="unit-price" class="block text-gray-700 text-sm font-bold mb-2">Precio Unitario:</label>
+                <input type="number" id="unit-price" name="unit-price" step="0.01" min="0" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="supplier" class="block text-gray-700 text-sm font-bold mb-2">Proveedor Sugerido:</label>
+                <input type="text" id="supplier" name="supplier" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="notes" class="block text-gray-700 text-sm font-bold mb-2">Notas Adicionales:</label>
+                <textarea id="notes" name="notes" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-y"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Enviar Requerimiento</button>
+        </form>
+    </div>
+    <script src="new-purchase-request.js"></script>
+</body>
+</html>

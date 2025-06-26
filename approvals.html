@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprobaciones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">Panel de Aprobaciones</h1>
+
+        <!-- Sección de Informes -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Informes Clave</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-medium text-blue-800 mb-2">Eficiencia</h3>
+                    <p class="text-gray-600">Análisis de la eficiencia en los procesos de compra y aprobación.</p>
+                    <div class="mt-4 text-blue-600 font-bold">85% de Eficiencia</div>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-medium text-green-800 mb-2">Ahorros</h3>
+                    <p class="text-gray-600">Identificación y seguimiento de los ahorros generados.</p>
+                    <div class="mt-4 text-green-600 font-bold">$15,000 Ahorrados</div>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-medium text-purple-800 mb-2">Cumplimiento de Proveedores</h3>
+                    <p class="text-gray-600">Evaluación del cumplimiento de los proveedores con los acuerdos.</p>
+                    <div class="mt-4 text-purple-600 font-bold">92% Cumplimiento</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Ranking de Proveedores -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Ranking de Proveedores</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr class="w-full bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                            <th class="py-3 px-6 text-left">Proveedor</th>
+                            <th class="py-3 px-6 text-left">Precio</th>
+                            <th class="py-3 px-6 text-left">Tiempos</th>
+                            <th class="py-3 px-6 text-left">Calidad</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600 text-sm font-light">
+                        <tr class="border-b border-gray-200 hover:bg-gray-100">
+                            <td class="py-3 px-6 text-left whitespace-nowrap">Proveedor A</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐⭐⭐</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐⭐</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-100">
+                            <td class="py-3 px-6 text-left whitespace-nowrap">Proveedor B</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐⭐</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐⭐⭐</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-100">
+                            <td class="py-3 px-6 text-left whitespace-nowrap">Proveedor C</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐⭐</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐</td>
+                            <td class="py-3 px-6 text-left">⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Sección de Evolución de Precios y Oportunidades de Ahorro -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Evolución de Precios y Oportunidades de Ahorro</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-yellow-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-medium text-yellow-800 mb-2">Evolución de Precios</h3>
+                    <p class="text-gray-600">Gráfico (placeholder) mostrando la tendencia de precios a lo largo del tiempo.</p>
+                    <div class="mt-4 h-32 bg-yellow-200 flex items-center justify-center text-yellow-700">
+                        [Gráfico de Evolución de Precios aquí]
+                    </div>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-medium text-red-800 mb-2">Oportunidades de Ahorro</h3>
+                    <p class="text-gray-600">Sugerencias y áreas identificadas para posibles ahorros.</p>
+                    <ul class="list-disc list-inside mt-4 text-red-600">
+                        <li>Negociar descuentos por volumen con Proveedor A.</li>
+                        <li>Consolidar compras de insumos similares.</li>
+                        <li>Explorar nuevos proveedores para la categoría X.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+    <main class="flex-1 p-8 overflow-auto">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-800">Reportes</h2>
+        </div>
+
+        <section id="efficiency-reports" class="bg-white p-6 rounded-xl shadow-sm mb-8">
+            <h3 class="text-lg font-medium text-gray-800 mb-4">Informes de Eficiencia, Ahorros y Cumplimiento</h3>
+            <div class="report-filters flex items-center space-x-4 mb-4">
+                <label for="report-type" class="block text-sm font-medium text-gray-700">Tipo de Informe:</label>
+                <select id="report-type" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                    <option value="efficiency">Eficiencia</option>
+                    <option value="savings">Ahorros</option>
+                    <option value="compliance">Cumplimiento de Proveedores</option>
+                </select>
+                <button onclick="generateReport()" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Generar Informe</button>
+            </div>
+            <div class="report-content bg-gray-100 p-4 rounded-lg min-h-[100px] flex items-center justify-center text-gray-500">
+                <p>Seleccione un tipo de informe y haga clic en "Generar Informe".</p>
+            </div>
+        </section>
+
+        <section id="provider-ranking" class="bg-white p-6 rounded-xl shadow-sm mb-8">
+            <h3 class="text-lg font-medium text-gray-800 mb-4">Ranking de Proveedores</h3>
+            <div class="ranking-filters flex items-center space-x-4 mb-4">
+                <label for="ranking-criteria" class="block text-sm font-medium text-gray-700">Criterio de Ranking:</label>
+                <select id="ranking-criteria" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                    <option value="price">Precio</option>
+                    <option value="time">Tiempos de Entrega</option>
+                    <option value="quality">Calidad</option>
+                </select>
+                <button onclick="generateRanking()" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Generar Ranking</button>
+            </div>
+            <div class="ranking-content bg-gray-100 p-4 rounded-lg min-h-[100px] flex items-center justify-center text-gray-500">
+                <p>Seleccione un criterio y haga clic en "Generar Ranking".</p>
+            </div>
+        </section>
+
+        <section id="price-evolution" class="bg-white p-6 rounded-xl shadow-sm mb-8">
+            <h3 class="text-lg font-medium text-gray-800 mb-4">Evolución de Precios y Oportunidades de Ahorro</h3>
+            <div class="evolution-filters flex items-center space-x-4 mb-4">
+                <label for="product-name" class="block text-sm font-medium text-gray-700">Producto/Servicio:</label>
+                <input type="text" id="product-name" placeholder="Nombre del producto/servicio" class="mt-1 block w-full pl-3 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <button onclick="showPriceEvolution()" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Mostrar Evolución</button>
+            </div>
+            <div class="evolution-content bg-gray-100 p-4 rounded-lg min-h-[100px] flex items-center justify-center text-gray-500">
+                <p>Ingrese un producto/servicio y haga clic en "Mostrar Evolución".</p>
+            </div>
+        </section>
+    </main>
+    <script src="reports.js"></script>
+</body>
+</html>
